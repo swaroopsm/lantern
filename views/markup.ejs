@@ -11,10 +11,19 @@
 
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
 <script>
 	$(document).ready(function(){
 		var content = $("#_lantern_content").text();
 		$("#_lantern_content").html(content);
 	});
+
+  var socket = io.connect('http://localhost:1619');
+  socket.on('changes', function (output) {
+		if(window.location.pathname === output.data.cleanurl){
+			$("#_lantern_content").html(output.data.content);
+		}
+	});
+
 </script>
 </html>
