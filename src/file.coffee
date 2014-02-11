@@ -34,5 +34,4 @@ class File
 		_.contains(File::ALLOWED_EXTENSIONS, this.extension())
 		
 
-file = new File(path.join(process.cwd(), "README.md"))
-console.log file.render()
+module.exports = File
