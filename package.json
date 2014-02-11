@@ -30,7 +30,9 @@
   },
 	"dependencies": [
 		"underscore",
-		"underscore.string"
+		"underscore.string",
+		"express",
+		"ejs"
 	],
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.4",
