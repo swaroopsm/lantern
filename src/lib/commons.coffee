@@ -40,8 +40,4 @@ class Common
 
 		return _.flatten files
 
-_.each(
-	Common.getMdFiles(process.cwd()), (file) ->
-		console.log(file.url)
-)
 module.exports = Common
