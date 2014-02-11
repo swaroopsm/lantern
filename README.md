@@ -8,9 +8,15 @@ Preview Markdown Files.
 ## Start
 	$ lantern
 
-Hit `localhost:1619` in your web browser
+Hit `localhost:1619` in your web browser.
 
 Open a markdown file in your editor, edit some text, save and it will appear in your browser automatically without reload.
+
+## TODO:
+- Avoid `jquery` loading from `google cdn`.
+- Serving current directory's images.
+- Support for various stylesheets like github, custom stylesheet etc.
+- Support for disabling yaml front-matter(if any).
 
 
 ## License
