@@ -20,6 +20,10 @@ class File
 	extension: ->
 		path.extname @full_path
 
+	cleanurl: ->
+		file_with_ext = path.join(File::URL_PREFIX, _s.strRight(@full_path, process.cwd()))
+		"#{_s.strLeft(file_with_ext, path.extname(@full_path))}"
+
 	url: ->
 		file_with_ext = path.join(File::URL_PREFIX, _s.strRight(@full_path, process.cwd()))
 		"#{_s.strLeft(file_with_ext, path.extname(@full_path))}?e=#{_s.strRight(this.extension(), ".")}"
@@ -32,6 +36,5 @@ class File
 
 	isValid: ->
 		_.contains(File::ALLOWED_EXTENSIONS, this.extension())
-		
 
 module.exports = File
