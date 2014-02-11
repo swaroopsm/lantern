@@ -1,6 +1,6 @@
 # Lantern
 
-Preview Markdown Files
+Preview Markdown Files.
 
 
 ## License

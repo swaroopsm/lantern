@@ -7,9 +7,6 @@ lantfile = require './file'
 
 class Common
 
-	constructor: ->
-		# console.log(this)
-
 	@getMdFiles: (files_path) ->
 		files = []
 		raw_files = fs.readdirSync(files_path)
