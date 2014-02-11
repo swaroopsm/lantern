@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<h2>Lantern</h2>
+	<hr>
+	<ul>
+	<% for(var i=0; i<files.length; i++){ %>
+		<li><a href="<%= files[i].url %>"><%= files[i].name %></a></li>
+	<% } %>
+	</ul>
+</body>
+</html>
