@@ -8,8 +8,8 @@ marked = require 'marked'
 
 class File
 
-	ALLOWED_EXTENSIONS = ['.md', '.markdown', '.mdown']
-	URL_PREFIX = "_lantern"
+	ALLOWED_EXTENSIONS: ['.md', '.markdown', '.mdown']
+	URL_PREFIX: "/_lantern"
 
 	constructor: (full_path) ->
 		@full_path = full_path
