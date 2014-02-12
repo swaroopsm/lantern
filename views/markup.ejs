@@ -3,10 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
+	<link rel="stylesheet" href="/_lantern/css/style.css">
 </head>
 <body>
 	<div id="_lantern_content">
-		<%= file.render() %>
+		<div class="spinner">
+			<div class="double-bounce1"></div>
+			<div class="double-bounce2"></div>
+		</div>
+		<div id="_lantern_text">
+			<%= file.render() %>
+		</div>
 	</div>
 
 </body>
@@ -14,7 +21,7 @@
 <script src="/socket.io/socket.io.js"></script>
 <script>
 	$(document).ready(function(){
-		var content = $("#_lantern_content").text();
+		var content = $("#_lantern_text").text();
 		$("#_lantern_content").html(content);
 	});
 
