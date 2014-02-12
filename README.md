@@ -22,3 +22,7 @@ Open a markdown file in your editor, edit some text, save and it will appear in 
 ## License
 Copyright (c) 2014 Swaroop SM  
 Licensed under the MIT license.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/swaroopsm/lantern/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
